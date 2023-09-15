@@ -90,3 +90,36 @@ body > div.container > div:nth-child(3) button {
     color: hsla(0, 0%, 100%, 0.75);
     font-weight: 400;
 }
+
+@media (max-width: 400px) {
+  body {
+    font-size: 15px;
+    height: 100%;
+  }
+
+  .container {
+    flex-direction: column; /* Display cards as columns */
+  }
+
+  .card {
+    width: 90%;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0;
+  }
+
+  .icon-title {
+    align-items: center; /* Center icons and titles */
+    gap: 10px; /* Reduce the gap between icon and title */
+  }
+
+  h3 {
+    font-size: 34px; /* Adjust the font size for mobile */
+  }
+
+    button {
+        margin-top: 20px; /* Reduce top margin for buttons */
+        width: 100%; /* Make buttons take up the full width */
+    }
+}
+
